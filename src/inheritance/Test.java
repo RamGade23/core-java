@@ -15,6 +15,5 @@ public class Test {
         Bus bus = new Bus();
         System.out.println(bus.brand + " " + bus.model);
         bus.milage();
-
     }
 }
