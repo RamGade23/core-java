@@ -1,5 +1,9 @@
 package inheritance;
 
 public class Car extends Vehicle{
-    public String modelName = "Nexon";
+    final String modelName = "Nexon";
+
+    /*public final void run(){
+        System.out.println("Running");
+    }*/
 }
