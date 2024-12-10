@@ -1,9 +1,7 @@
 package inheritance;
 
+import java.security.PublicKey;
+
 public class Vehicle {
     public String brand = "Tata";
-
-    public void milage() {
-        System.out.println("milage is 10");
-    }
 }
