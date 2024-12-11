@@ -20,7 +20,7 @@ public class Main {
         Map<String, Double> roundedData = new LinkedHashMap<>();
         for (Map.Entry<String, Double> entry : data.entrySet()) {
             double roundedValue = BigDecimal.valueOf(entry.getValue())
-                    .setScale(2, RoundingMode.HALF_UP)
+                    .setScale(2, RoundingMode.DOWN)
                     .doubleValue();
             roundedData.put(entry.getKey(), roundedValue);
         }
@@ -28,6 +28,7 @@ public class Main {
         // Print rounded JSON-like structure
         System.out.println(roundedData);
         BigDecimal number = new BigDecimal("93.40900");
-        System.out.println("HALF_UP: " + number.setScale(2, RoundingMode.HALF_UP));
+        System.out.println("HALF_UP: " + number.setScale(2, RoundingMode.DOWN));
+        System.out.println(new BigDecimal("93.90").subtract(new BigDecimal("90.10")).abs());
     }
 }
