@@ -12,6 +12,5 @@ public class Test {
 
         /*IciciBank iciciBank = new IciciBank();
         iciciBank.calculateRoi();*/
-
     }
 }
