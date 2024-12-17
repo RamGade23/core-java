@@ -4,7 +4,7 @@ public class StringTest {
 
     public static void main(String[] args) {
         String a = "Welcome"; //SP
-        String b = "Welcome"; //existing SP
+        String b = "welcome"; //existing SP
         String c = new String("Welcome"); //Heap
         String d = new String("Welcome"); //new Heap
         String e = "Prasad"; //existing SP
@@ -28,11 +28,14 @@ public class StringTest {
         // == -> reference comparison
         String a = "Akash"; //SP
         String b = "Rohit";
-        String c = "Akash";
+        String c = "akash";
         String d = "Rohit";
         String e = "Rohit";
         String f = a; //"Akash"
         String str = new String("Akash"); //new
+        String st1 = str;
+        String st2 = str.intern();
+
 
         System.out.println("a==b : " + (a == b));
         System.out.println("a==c : " + (a == c));
@@ -40,6 +43,14 @@ public class StringTest {
         System.out.println("d==e : " + (d == e));
         System.out.println("d==f : " + (d == f));
         System.out.println("a==str : " + (a == str));
+        System.out.println("st1==a : " + (st1 == a));
+        System.out.println("st2==a : " + (st2 == a));
+        System.out.println("str1==str2 : " + (st1 == st2));
+        System.out.println("str1==str2 : " + (st1 == st2));
+        System.out.println("st1==str : " + (st1 == str));
+
+        System.out.println("a.equals(c) :" + a.equals(c));
+
 
     }
 }
