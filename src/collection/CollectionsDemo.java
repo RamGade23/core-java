@@ -21,7 +21,7 @@ public class CollectionsDemo {
         System.out.println("element at index 4nd :" + a1.get(4));
 
         //generic
-        List<String> a2 = new ArrayList<>();
+        List<String> a2 = new ArrayList<>(); //{"Aishwarya", "Rushi"....}
         a2.add("Aishwarya");
         a2.add("Rushi");
         a2.add("Pratibha");
@@ -31,6 +31,7 @@ public class CollectionsDemo {
         System.out.println("a2.get(3) : " + a2.get(3));
 
         a2.remove(3);
+        a2.remove("Rohan");
         System.out.println("a2 after remove(3) : " + a2);
 
         a2.set(1, "Amit");
