@@ -72,9 +72,12 @@ public class LinkedListDemo {
 
         System.out.println("--------------------------------------");
         LinkedList<Integer> l4 = new LinkedList<>();
-        l4.add(50);
         l4.add(10);
+        l4.add(50);
+        l4.add(50);
         l4.add(60);
+        l4.add(null);
+        l4.add(null);
         l4.add(30);
         System.out.println("l4 : " + l4);
         l4.removeFirst();
