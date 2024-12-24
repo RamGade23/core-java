@@ -7,8 +7,8 @@ class Employee implements Comparable<Employee> {
 
     //sort by name ascending order
     @Override
-    public int compareTo(Employee o) {
-        return this.getName().compareTo(o.getName());
+    public int compareTo(Employee e) {
+        return this.getName().compareTo(e.getName());
     }
 
     //sort by name and salary
@@ -98,6 +98,4 @@ class Employee implements Comparable<Employee> {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
-
 }
