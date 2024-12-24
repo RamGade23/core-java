@@ -11,13 +11,13 @@ public class ComparableExample {
         employees.add(new Employee("Sam", 4, 20000));
         employees.add(new Employee("John", 5, 40000));
 
-        /*System.out.println("Before sorting by name");
-        printList(employees);*/
+        System.out.println("Before sorting by name");
+        printList(employees);
 
         //1. Sort employee list basis on the name ascending/descending order
-        /*Collections.sort(employees);
+        Collections.sort(employees);
         System.out.println("After sorting by name");
-        printList(employees);*/
+        printList(employees);
 
         //2. Sort employee list basis on the ID ascending/descending
         /*Collections.sort(employees);
