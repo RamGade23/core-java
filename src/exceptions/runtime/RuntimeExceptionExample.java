@@ -1,6 +1,4 @@
-package exceptions.compiletime.runtime;
-
-import collection.comparator.Employee;
+package exceptions.runtime;
 
 public class RuntimeExceptionExample {
     public static void main(String[] args) {
