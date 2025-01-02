@@ -2,6 +2,7 @@ package multithreading;
 
 public class ThreadExample {
     public static void main(String[] args) throws InterruptedException {
+
         MyThread t1 = new MyThread("abc"); //stage 1 : New
         t1.start(); //stage 2 : Runnable
         //Thread.sleep(2000);
